@@ -341,7 +341,7 @@ export default class JsxParser extends React.Component<TProps> {
 
 		return (
 			this.props.renderInWrapper
-				? <div className={className} style={{height:"100%"}}>{this.ParsedChildren}</div>
+				? <div className={className} style={{height:"100%", overflow:"scroll"}}>{this.ParsedChildren}</div>
 				: <>{this.ParsedChildren}</>
 		)
 	}
